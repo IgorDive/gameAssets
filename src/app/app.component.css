@@ -1,0 +1,792 @@
+@keyframes liftHeadAvatar {
+	from {transform: translateY(0px) rotateZ(0deg);}
+	to {transform: translateY(5px) rotateZ(2deg);}
+}
+
+@keyframes liftBodyAvatar {
+	from {transform: translateY(0px);}
+	to {transform: translateY(2px);}
+}
+
+@keyframes rotateHandAvatar {
+	0% {transform: rotateZ(0deg);}
+	10% {transform: rotateZ(-10deg);}
+	20% {transform: rotateZ(0deg);}
+	30% {transform: rotateZ(-10deg);}
+	40% {transform: rotateZ(0deg);}
+	50% {transform: rotateZ(-10deg);}
+	60% {transform: rotateZ(0deg);}
+	70% {transform: rotateZ(-10deg);}
+	80% {transform: rotateZ(0deg);}
+	90% {transform: rotateZ(-110deg);}
+	100% {transform: rotateZ(0deg);}
+}
+
+@keyframes rotateHandWeaponAvatar {
+	from {transform: rotateZ(0deg);}
+	to {transform: rotateZ(-10deg);}
+}
+
+@keyframes liftHeadEnemy {
+	0% {transform: translateY(0px);}
+	6.25% {transform: translateY(5px);}
+	12.5% {transform: translateY(0px);}
+	18.75% {transform: translateY(2px);}
+	25% {transform: translateY(0px);}
+	31.25% {transform: translateY(5px);}
+	37.5% {transform: translateY(0px);}
+	43.75% {transform: translateY(2px);}
+	50% {transform: translateY(0px);}
+	56.25% {transform: translateY(5px);}
+	62.5% {transform: translateY(0px);}
+	68.75% {transform: translateY(2px);}
+	75% {transform: translateY(0px);}
+	81.25% {transform: rotateZ(35deg);}
+	87.5% {transform: rotateZ(25deg);}
+	93.75% {transform: rotateZ(35deg);}
+	100% {transform: rotateZ(0deg);}
+}
+
+@keyframes liftBodyEnemy {
+	from {transform: translateY(0px);}
+	to {transform: translateY(2px);}
+}
+
+@keyframes rotateHandEnemy {
+	0% {transform: rotateZ(0deg) translateX(0px);}
+	6.25% {transform: rotateZ(10deg) translateX(-10px);}
+	12.5% {transform: rotateZ(0deg) translateX(0px);}
+	18.75% {transform: rotateZ(10deg) translateX(-10px);}
+	25% {transform: rotateZ(0deg) translateX(0px);}
+	31.25% {transform: rotateZ(10deg) translateX(-10px);}
+	37.5% {transform: rotateZ(0deg) translateX(0px);}
+	43.75% {transform: rotateZ(10deg) translateX(-10px);}
+	50% {transform: rotateZ(0deg) translateX(0px);}
+	56.25% {transform: rotateZ(10deg) translateX(-10px);}
+	62.5% {transform: rotateZ(0deg) translateX(0px);}
+	68.75% {transform: rotateZ(10deg) translateX(-10px);}
+	75% {transform: rotateZ(0deg) translateX(0px);}
+	81.25% {transform: rotateZ(70deg) translateX(0px);}
+	87.5% {transform: rotateZ(70deg) translateX(0px);}
+	93.75% {transform: rotateZ(70deg) translateX(0px);}
+	100% {transform: rotateZ(0deg) translateX(0px);}
+}
+
+@keyframes rotateHandWeaponEnemy {
+	from {transform: rotateZ(0deg);}
+	to {transform: rotateZ(-10deg);}
+}
+
+@keyframes treatment {
+	0% {background: url('./images/aura.png') 0px 0px;}
+	100% {background: url('./images/aura.png') -896px 0px;}
+}
+
+@keyframes explosion {
+	0% {background: url('./images/sprite_explosion.png') 0px 0px;}
+	100% {background: url('./images/sprite_explosion.png') -1400px 0px;}
+}
+
+@keyframes lighting {
+	0% {background: url('./images/sprite_lighting25.png') 0px 0px;}
+	100% {background: url('./images/sprite_lighting25.png') -3330px 0px;}
+}
+
+@keyframes explosionOnEnemyA {
+	0% {background: url('./images/Explosion03.png') 0px 0px;}
+	100% {background: url('./images/Explosion03.png') -384px 0px;}
+}
+
+@keyframes explosionOnEnemyB {
+	0% {background: url('./images/Explosion03.png') 0px -128px;}
+	100% {background: url('./images/Explosion03.png') -384px -128px;}
+}
+
+@keyframes explosionOnEnemyC {
+	0% {background: url('./images/Explosion03.png') 0px -256px;}
+	100% {background: url('./images/Explosion03.png') -384px -256px;}
+}
+
+@keyframes explosionOnEnemyD {
+	0% {background: url('./images/Explosion03.png') 0px -384px;}
+	100% {background: url('./images/Explosion03.png') -384px -384px;}
+}
+
+@keyframes fireballFromAvatar {
+	0% {transform: translate(0px, 0px); background: url('./images/efecto_00000.png');}
+	10% {transform: translate(1px, -10px); background: url('./images/efecto_00001.png');}
+	20% {transform: translate(4px, -40px); background: url('./images/efecto_00002.png');}
+	30% {transform: translate(9px, -90px); background: url('./images/efecto_00003.png');}
+	40% {transform: translate(16px, -160px); background: url('./images/efecto_00004.png');}
+	50% {transform: translate(25px, -250px); background: url('./images/efecto_00005.png');}
+	60% {transform: translate(36px, -360px); background: url('./images/efecto_00006.png');}
+	70% {transform: translate(49px, -490px); background: url('./images/efecto_00007.png');}
+	80% {transform: translate(64px, -640px); background: url('./images/efecto_00008.png');}
+	90% {transform: translate(80px, -800px); background: url('./images/efecto_00009.png');}
+	100% {transform: translate(100px, -1000px); background: url('./images/efecto_00010.png');}
+}
+
+@keyframes fireballOnEnemyHit {
+	0% {transform: translate(0px, 0px); background: url('./images/efecto_00039.png');}
+	20% {transform: translate(7px, 97px); background: url('./images/efecto_00040.png');}
+	40% {transform: translate(14px, 194px); background: url('./images/efecto_00041.png');}
+	60% {transform: translate(21px, 291px); background: url('./images/efecto_00042.png');}
+	80% {transform: translate(28px, 388px); background: url('./images/efecto_00043.png');}
+	100% {transform: translate(36px, 485px); background: url('./images/efecto_00044.png');}
+}
+
+@keyframes fireballOnEnemyMiss {
+	0% {transform: translate(0px, 0px); background: url('./images/efecto_00039.png');}
+	10% {transform: translate(7px, 80px); background: url('./images/efecto_00040.png');}
+	20% {transform: translate(14px, 160px); background: url('./images/efecto_00041.png');}
+	30% {transform: translate(21px, 240px); background: url('./images/efecto_00042.png');}
+	40% {transform: translate(28px, 320px); background: url('./images/efecto_00043.png');}
+	50% {transform: translate(35px, 400px); background: url('./images/efecto_00044.png');}
+	60% {transform: translate(42px, 480px); background: url('./images/efecto_00045.png');}
+	70% {transform: translate(49px, 560px); background: url('./images/efecto_00046.png');}
+	80% {transform: translate(56px, 640px); background: url('./images/efecto_00047.png');}
+	90% {transform: translate(63px, 720px); background: url('./images/efecto_00048.png');}
+	100% {transform: translate(70px, 800px); background: url('./images/efecto_00049.png');}
+}
+
+@keyframes shakeHead {
+	0% {transform: rotateZ(12deg) translateX(-6px);}
+	20% {transform: rotateZ(0deg) translateX(-6px);}
+	40% {transform: rotateZ(-12deg) translateX(-6px);}
+	50% {transform: rotateZ(-12deg) translateX(6px);}
+	70% {transform: rotateZ(0deg) translateX(6px);}
+	90% {transform: rotateZ(12deg) translateX(6px);}
+	100% {transform: rotateZ(12deg) translateX(-6px);}
+}
+
+@keyframes shakeBody {
+	0% {transform: rotateZ(-15deg);}
+	25% {transform: rotateZ(0deg);}
+	50% {transform: rotateZ(15deg);}
+	75% {transform: rotateZ(0deg);}
+	100% {transform: rotateZ(-15deg);}
+}
+
+@keyframes lostHeadEnemy {
+	0% {transform: rotateZ(0deg) translate(0px, 0px)}
+	50% {transform: rotateZ(-90deg) translate(0px, 0px)}
+	100% {transform: rotateZ(-180deg) translate(130px, -80px)}
+}
+
+@keyframes shakeHeadFromExplosion {
+	0% {transform: rotateZ(0deg)}
+	10% {transform: rotateZ(-15deg)}
+	100% {transform: rotateZ(0deg)}
+}
+
+@keyframes lostHeadAvatar {
+	0% {transform: translateY(0px)}
+	100% {transform: translateY(115px)}
+}
+
+@keyframes lostRightHandAvatar {
+	0% {transform: translateY(0px)}
+	80% {transform: translateY(0px)}
+	100% {transform: translateY(35px)}
+}
+
+
+
+
+
+
+:host {
+	width: 100vw;
+    height: 100vh;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+}
+
+.counter-enemies {
+	position: absolute;
+	font: small-caps 2.4rem serif;
+	top: 28px;
+	width: 100vw;
+	text-align: center;
+	color: green;
+}
+
+.field-of-game {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	background: url('./images/background.svg') no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.avatar, .enemy {
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.name-avatar, .name-enemy {
+	font: small-caps 2rem serif;
+	color: red;
+}
+
+progress {
+	width: 30vw;
+	height: 10px;
+	background-color: green;
+}
+
+.feet-of-avatar, .feet-of-enemy {
+	position: relative;
+	margin-top: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+.avatar-head {
+	position: absolute;
+	width: 100px;
+	height: 130px;
+	left: -50px;
+	bottom: 120px;
+	background: url('./images/heroHead.svg') no-repeat;
+	background-size: contain;
+	z-index: 3;
+}
+
+.avatar-body {
+	position: absolute;
+	width: 61px;
+	height: 100px;
+	left: -30px;
+	bottom: 25px;
+	background: url('./images/heroBody.svg') no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+
+.avatar-right-hand {
+	position: absolute;
+	width: 200px;
+	height: 75px;
+	left: -100px;
+	bottom: 32px;
+	background: url('./images/heroRightHand.svg') no-repeat;
+	background-size: contain;
+	z-index: 2;
+}
+
+.avatar-left-hand {
+	position: absolute;
+	width: 29px;
+	height: 72px;
+	left: 15px;
+	bottom: 35px;
+	background: url('./images/heroLeftHand.svg') no-repeat;
+	background-size: contain;
+}
+
+.avatar-right-foot {
+	position: absolute;
+	width: 35px;
+	height: 34px;
+	left: -28px;
+	bottom: 0px;
+	background: url('./images/heroRightFoot.svg') no-repeat;
+	background-size: contain;
+}
+
+.avatar-left-foot {
+	position: absolute;
+	width: 24px;
+	height: 31px;
+	left: 4px;
+	bottom: 0px;
+	background: url('./images/heroLeftFoot.svg') no-repeat;
+	background-size: contain;
+}
+
+
+.avatar-animation-wait-head {
+	transform-origin: center bottom;
+	animation: liftHeadAvatar 1s ease-in-out infinite alternate;
+}
+
+.avatar-animation-wait-body {
+	animation: liftBodyAvatar 1s ease-in-out infinite alternate;
+}
+
+.avatar-animation-wait-right-hand {
+	transform-origin: 40% 10%;
+	animation: rotateHandWeaponAvatar 1s ease-in-out alternate infinite;
+}
+
+.avatar-animation-wait-left-hand {
+	transform-origin: 50% 15%;
+	animation: rotateHandAvatar 10s ease-in-out infinite;
+}
+
+
+
+.avatar-animation-kick-right-hand {
+	
+}
+
+.animation-shake-head-from-explosion {
+	transform-origin: center bottom;
+	animation: shakeHeadFromExplosion 2s ease-out 1 0.1s;
+}
+
+.avatar-animation-shake-body {
+
+}
+
+.avatar-animation-lost-head {
+	animation: lostHeadAvatar 2s cubic-bezier(0.7, 0, 1, 1) 1 forwards;
+}
+
+.avatar-animation-lost-right-hand {
+	animation: lostRightHandAvatar 2s cubic-bezier(0.7, 0, 1, 1) 1 forwards;
+}
+
+
+
+.enemy-head {
+	position: absolute;
+	width: 200px;
+	height: 130px;
+	left: -100px;
+	bottom: 200px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	z-index: 2;
+}
+
+.enemy-body {
+	position: absolute;
+	width: 140px;
+	height: 135px;
+	left: -70px;
+	bottom: 72px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	z-index: 1;
+}
+
+.enemy-right-hand {
+	position: absolute;
+	width: 90px;
+	height: 190px;
+	left: -120px;
+	bottom: 142px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.enemy-left-hand {
+	position: absolute;
+	width: 80px;
+	height: 39px;
+	left: -50px;
+	bottom: 146px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 3;
+}
+
+.enemy-right-foot {
+	position: absolute;
+	width: 60px;
+	height: 90px;
+	left: -60px;
+	bottom: 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.enemy-left-foot {
+	position: absolute;
+	width: 60px;
+	height: 90px;
+	left: -5px;
+	bottom: 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.devil-head {
+	background-image: url('./images/head_devil.svg')
+}
+
+.ghost-head {
+	background-image: url('./images/head_ghost.svg')
+}
+
+.pirate-head {
+	background-image: url('./images/head_pirate.svg')
+}
+
+
+
+.robot-head {
+	background-image: url('./images/robotHead.svg')
+}
+
+.robot-body {
+	background-image: url('./images/robotBody.svg')
+}
+
+.robot-left-hand {
+	background-image: url('./images/robotLeftHand.svg')
+}
+
+.robot-right-hand {
+	background-image: url('./images/robotRightHand.svg')
+}
+
+.robot-left-foot {
+	background-image: url('./images/robotLeftFoot.svg')
+}
+
+.robot-right-foot {
+	background-image: url('./images/robotRightFoot.svg')
+}
+
+
+
+
+.skeleton-head {
+	background-image: url('./images/skeletonHead.svg')
+}
+
+.skeleton-body {
+	background-image: url('./images/skeletonBody.svg')
+}
+
+.skeleton-left-hand {
+	background-image: url('./images/skeletonLeftHand.svg')
+}
+
+.skeleton-right-hand {
+	background-image: url('./images/skeletonRightHand.svg')
+}
+
+.skeleton-left-foot {
+	background-image: url('./images/skeletonLeftFoot.svg')
+}
+
+.skeleton-right-foot {
+	background-image: url('./images/skeletonRightFoot.svg')
+}
+
+
+
+.ork-head {
+	background-image: url('./images/orkHead.svg')
+}
+
+.ork-body {
+	background-image: url('./images/orkBody.svg')
+}
+
+.ork-left-hand {
+	background-image: url('./images/orkLeftHand.svg')
+}
+
+.ork-right-hand {
+	background-image: url('./images/orkRightHand.svg')
+}
+
+.ork-left-foot {
+	background-image: url('./images/orkLeftFoot.svg')
+}
+
+.ork-right-foot {
+	background-image: url('./images/orkRightFoot.svg')
+}
+
+
+
+
+.enemy-animation-wait-head {
+	transform-origin: 50% 100%;
+	animation: liftHeadEnemy 11.2s ease-in infinite;
+}
+
+.enemy-animation-wait-body {
+	animation: liftBodyEnemy 0.7s ease-in infinite alternate;
+}
+
+.enemy-animation-wait-left-hand {
+	transform-origin: 90% 50%;
+	animation: rotateHandEnemy 11.2s ease-in infinite;
+}
+
+.enemy-animation-wait-right-hand {
+	transform-origin: 90% 85%;
+	animation: rotateHandEnemy 11.2s ease-in infinite;
+}
+
+
+
+
+.enemy-animation-kick-right-hand {
+	
+}
+
+.enemy-animation-shake-head {
+	transform-origin: center top;
+	animation: shakeHead 0.2s linear 3 0.11s;
+}
+
+.enemy-animation-shake-body {
+	transform-origin: center bottom;
+	animation: shakeBody 0.2s linear 3 0.1s;
+}
+
+.enemy-animation-lost-head {
+	transform-origin: center bottom;
+	animation: lostHeadEnemy 2s cubic-bezier(0.7, 0, 1, 1) 1 forwards;
+}
+
+
+
+
+
+
+
+.landing-page {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	background-color: gray;
+	z-index: 4;
+}
+
+h1 {
+	font: italic 4rem arial;
+	color: red;
+}
+
+.landing-page>div {
+	margin-top: 30px;
+}
+
+.landing-page button {
+	width: 140px;
+	height: 46px;
+	font: 700 2rem arial;
+	color: red;
+	margin-left: 104px;
+}
+
+.landing-page input {
+	height: 42px;
+	width: 250px;
+	font: 2rem arial;
+	text-indent: 10px;
+	color: red;
+}
+
+.author {
+	width: 640px;
+	height: 20px;
+	margin: 0 auto;
+	font: 1rem arial;
+	color: red;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+.math-task {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	background-color: gray;
+	z-index: 4;
+}
+
+h2 {
+	font: 700 3rem arial;
+}
+
+.math-task>div {
+	position: absolute;
+	left: 0px;
+	top: 45vh;
+	width: 100%;
+}
+
+.math-task button {
+	width: 100px;
+	height: 46px;
+	font: 700 2rem arial;
+	margin-left: 10px;
+}
+
+.math-task input {
+	height: 42px;
+	width: 100px;
+	font: 2rem arial;
+	text-indent: 10px;
+}
+
+.math-task p {
+	display: inline-block;
+	font: 700 2rem arial;
+}
+
+
+
+
+
+
+.top-ten-results {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	background-color: gray;
+	z-index: 4;
+}
+
+.top-ten-results>div {
+	font: 2rem arial;
+	width: 100%;
+}
+
+
+
+
+
+
+
+.choice-of-spell {
+	position: absolute;
+	top: -600px;
+	width: 100vw;
+	height: 210px;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 4;
+}
+
+.choice-of-spell button {
+	width: 100px;
+	height: 100px;
+	margin: 0px;
+}
+
+h3 {
+	font: 700 2rem arial;
+}
+
+
+
+
+
+
+
+
+
+.treatment {
+	position: absolute;
+	left: -65px;
+	bottom: 230px;
+	width: 130px;
+	height: 120px;
+	z-index: 3;
+	animation: treatment 0.2s steps(7) 10 0.05s;
+}
+
+.explosion {
+	position: absolute;
+	left: -50px;
+	bottom: 100px;
+	width: 200px;
+	height: 182px;
+	z-index: 4;
+	animation: explosion 0.5s steps(7) 1 0.05s;
+}
+
+.lighting-strike {
+	position: absolute;
+	left: -230px;
+	bottom: 0px;
+	width: 370px;
+	height: 925px;
+	z-index: 4;
+	animation: lighting 0.2s steps(9) 3 0.05s;
+}
+
+.explosion-on-enemy {
+	position: absolute;
+	left: -28px;
+	bottom: 270px;
+	width: 128px;
+	height: 128px;
+	z-index: 4;
+	animation: explosionOnEnemyA 0.25s steps(3) 0.05s,
+			   explosionOnEnemyB 0.25s steps(3) 0.3s,
+			   explosionOnEnemyC 0.25s steps(3) 0.55s,
+			   explosionOnEnemyD 0.25s steps(3) 0.8s;
+}
+
+.fireball-from-avatar{
+	position: absolute;
+	left: -15px;
+	bottom: -15px;
+	width: 72px;
+	height: 216px;
+	z-index: 4;
+	animation: fireballFromAvatar 1.6s linear 0.05s;
+}
+
+.fireball-on-enemy-hit {
+	position: absolute;
+	left: -36px;
+	bottom: 800px;
+	width: 72px;
+	height: 216px;
+	z-index: 4;
+	animation: fireballOnEnemyHit 0.8s linear 0.05s;
+}
+
+.fireball-on-enemy-miss {
+	position: absolute;
+	left: 24px;
+	bottom: 800px;
+	width: 72px;
+	height: 216px;
+	z-index: 4;
+	animation: fireballOnEnemyMiss 1.6s linear 0.05s;
+}

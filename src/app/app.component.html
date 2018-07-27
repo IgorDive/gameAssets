@@ -1,0 +1,93 @@
+<section *ngIf="toggleLandingPage" (keydown)="start($event.keyCode)" class="landing-page">
+    <h1>Forces of Darkness</h1>
+    <img width="640px" height="330px" src="./images/screenshot.jpg" />
+    <div>
+        <input [(ngModel)]="player" type="text" placeholder="input your name" maxlength="15" focus />
+        <button (click)="start($event.which)" type="button" name="">
+            Game
+        </button>
+    </div>
+    <div class="author">
+        designed by Ihar
+    </div>
+    <audio #startSound src="./sounds/mistery.mp3" loop></audio>
+</section>
+<section *ngIf="toggleFieldGame" class="field-of-game">
+    <div class="avatar">
+        <div class="name-avatar">{{player}}:{{progressAvatar}}</div>
+        <progress [value]="progressAvatar" max="100" class="progress-avatar"></progress>
+        <div class="feet-of-avatar">
+            <div [ngClass]="headAvatar"></div>
+            <div [ngClass]="bodyAvatar"></div>
+            <div [ngClass]="leftHandAvatar"></div>
+            <div [ngClass]="rightHandAvatar"></div>
+            <div class="avatar-right-foot"></div>
+            <div class="avatar-left-foot"></div>
+            <div [ngStyle]="{'animation-play-state': mainTreatment}" class="treatment"></div>
+            <div [ngStyle]="{'animation-play-state': mainExplosion}" class="explosion"></div>
+            <div [ngStyle]="{'animation-play-state': mainFireball}" class="fireball-from-avatar"></div>
+        </div>
+    </div>
+    <div class="enemy">
+        <div class="name-enemy">{{fullNameEnemy}}:{{progressEnemy}}</div>
+        <progress [value]="progressEnemy" max="100" class="progress-enemy"></progress>
+        <div class="feet-of-enemy">
+            <div [ngClass]="headEnemy"></div>
+            <div [ngClass]="bodyEnemy"></div>
+            <div [ngClass]="leftHandEnemy"></div>
+            <div [ngClass]="rightHandEnemy"></div>
+            <div [ngClass]="leftFootEnemy"></div>
+            <div [ngClass]="rightFootEnemy"></div>
+            <div [ngStyle]="{'animation-play-state': mainLighting}" class="lighting-strike"></div>
+            <div [ngStyle]="{'animation-play-state': fireballOnEnemyHit}" class="fireball-on-enemy-hit"></div>
+            <div [ngStyle]="{'animation-play-state': fireballOnEnemyMiss}" class="fireball-on-enemy-miss"></div>
+            <div [ngStyle]="{'animation-play-state': explosionOnEnemy}" class="explosion-on-enemy"></div>
+        </div>
+    </div>
+    <div class="counter-enemies">wins:{{counterEnemies}}</div>
+    <audio #audioExplosion src="./sounds/exsplosion.mp3"></audio>
+    <audio #audioLighting src="./sounds/lighting.mp3"></audio>
+    <audio #audioTreatment src="./sounds/treatment.mp3"></audio>
+    <audio #audioWin src="./sounds/win.mp3"></audio>
+    <audio #audioLose src="./sounds/lost.mp3"></audio>
+    <audio #audioFireball src="./sounds/lounchLoud.mp3"></audio>
+    <audio #audioFireballOnEnemyHit src="./sounds/arriveFireballHit.mp3"></audio>
+    <audio #audioFireballOnEnemyMiss src="./sounds/arriveFireballMiss.mp3"></audio>
+    <audio #audioExplosionOnEnemy src="./sounds/bigExplosion.mp3"></audio>
+    <audio src="./sounds/wind.mp3" autoplay loop></audio>
+    <audio src="./sounds/start.mp3" autoplay></audio>
+</section>
+<section *ngIf="toggleMathTask" (keydown)="checkResult($event.keyCode)" class="math-task">
+    <h2>Compute result!</h2>
+    <div>
+        <p>{{number1}}</p>
+        <p>{{sign}}</p>
+        <p>{{number2}}</p>
+        <p>=</p>
+        <input [(ngModel)]="result" type="text" placeholder="result" focus>
+        <button (click)="checkResult($event.which)" type="button" name="">
+            Enter
+        </button>
+    </div>
+    <audio #audioSuccess src="./sounds/wintask.mp3"></audio>
+    <audio #audioUnsuccess src="./sounds/losetask.mp3"></audio> 
+    <audio src="./sounds/choice.mp3" autoplay></audio>
+</section>
+<section *ngIf="toggleChoiceOfSpell" (keydown)="doToggleFocus($event.keyCode, $event)" class="choice-of-spell">
+    <h3>Choice spell</h3>
+    <button #lighting (click)="doLightingStrike()" focus type="button" name="">
+        <img width="90px" height="90px" src="./images/lighting.svg" />
+    </button>
+    <button #fireball (click)="doFireball()" type="button" name="">
+        <img width="90px" height="90px" src="./images/fireball.svg" />
+    </button>
+    <button #treatment (click)="doTreatment()" type="button" name="">
+        <img width="40px" height="90px" src="./images/medecine.svg" />
+    </button>
+    <audio #audioFocus src="./sounds/click.mp3"></audio>
+</section>
+<section *ngIf="toggleTopTenResults" class="top-ten-results">
+    <h2>Top Ten Results</h2>
+    <div *ngFor="let item of topTenResults; let i = index">{{i+1}}. {{item[0]}} your result is {{item[1]}}</div>
+    <audio src="./sounds/toptenres.mp3" autoplay></audio>
+</section>

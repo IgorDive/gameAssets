@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="44.751419mm"
+   height="15.900687mm"
+   viewBox="0 0 44.751418 15.900687"
+   version="1.1"
+   id="svg29317"
+   sodipodi:docname="robotRightHand.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs29311" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.75"
+     inkscape:cx="-76.642753"
+     inkscape:cy="55.464121"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g3662"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="737"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata29314">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-155.04226,-179.28028)">
+    <g
+       id="g3656"
+       transform="matrix(0.2530999,-0.29287425,0.37691875,0.19666425,-15.554156,295.59949)">
+      <path
+         d="m 486.2585,194.2787 -10.9488,-33.3116 26.2738,22.7075 z"
+         style="fill:#333300;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path3658"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 479.6444,178.6802 c 12.6678,0 24.6059,-10.855 20.0169,-19.6467 -2.1353,-4.0912 -11.0937,10.8627 -19.0738,-0.0909 -4.1187,-5.6526 6.8857,-23.4854 -0.9431,-23.4854 -12.668,0 -22.9373,9.6755 -22.9373,21.6111 0,11.9361 10.2696,21.6119 22.9373,21.6119"
+         style="fill:#333300;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path3660"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3662"
+       transform="matrix(0.2411287,-0.29287425,0.35909113,0.19666425,34.491205,217.08757)">
+      <path
+         d="m 270.91489,273.24338 c 12.86315,0.29106 23.06869,-9.47945 22.79444,-21.82377 -0.27425,-12.34421 -10.92441,-22.58674 -23.78756,-22.87781 -12.86356,-0.29107 -23.06868,9.47955 -22.79443,21.82376 0.27425,12.34432 10.924,22.58674 23.78755,22.87782"
+         style="fill:#333300;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.02452254"
+         id="path3664"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 274.91398,268.92639 c 8.36713,0.18933 15.00549,-6.16604 14.8271,-14.1955 -0.17838,-8.02914 -7.10596,-14.69179 -15.47309,-14.88112 -8.36693,-0.18932 -15.00518,6.16635 -14.8268,14.1955 0.17839,8.02946 7.10586,14.69179 15.47279,14.88112"
+         style="fill:#c08a44;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.02452254"
+         id="path3666"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 277.75121,264.78406 c 3.74419,0.0847 6.7151,-2.75926 6.63527,-6.35254 -0.0798,-3.59329 -3.18017,-6.57485 -6.92436,-6.65957 -3.7445,-0.0847 -6.715,2.75946 -6.63517,6.35274 0.0798,3.59329 3.17976,6.57464 6.92426,6.65937"
+         style="fill:#333300;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.02452254"
+         id="path3668"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
